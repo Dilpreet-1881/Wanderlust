@@ -30,7 +30,6 @@ const { config } = require("dotenv");
 // });
 
 const sessionOptions = {
-    store,
     secret:process.env.SECRET,
     resave:false,
     saveUninitialized:true,
