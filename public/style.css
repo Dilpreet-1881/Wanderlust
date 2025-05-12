@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+
+}
+.fa-compass{
+    color: rgb(247, 99, 70);
+    font-size: 2rem;
+}
+.f-info-socials{
+    color: #222222;
+    font-size: 1.2rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    height: 8rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    color: #211515 !important;
+    background-color: rgb(247, 99, 70);
+}
+.company{
+    color: #222222;
+}
+.card{
+    border: none ;
+    /* width: 100% !important; */
+    margin-bottom: 2rem !important;
+    /* padding: 0 !important; */
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    opacity: 1;
+}
+.card-dec{
+    text-decoration: none;
+}
+.card-img-top:hover{
+    opacity: 0.85;
+}
+.container{
+    flex: 1;
+}
+.button{
+    background-color: rgb(247, 99, 70);
+    /* border: none; */
+    border-radius: 0.5rem;
+}
+.edit-button{
+    background-color: rgb(247, 99, 70);
+    border-radius: 0.5rem;
+    /* border: none; */
+}
+.show-image{
+    height: 30vh;
+}
+.button-container{
+    display: flex;
+    
+}
+.review-card{
+    border: 1px solid black !important;
+}
+.signUp{
+    color:rgb(247, 99, 70);
+}

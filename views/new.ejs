@@ -1,0 +1,65 @@
+<% layout("/layout/boilerplate.ejs") %>
+<body>
+    <h3>Create new listing</h3>
+    <form method="post" action="http://localhost:8080/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" placeholder="Title of your listing" name="title" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">title should be valid</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" placeholder="Description of your listing" name="description" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">description should be valid</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select class="form-select" aria-label="Default select example" name="category">
+                <option selected>Listing category</option>
+                <option value="camping">camping</option>
+                <option value="swimmingpools">Swimming Pool</option>
+                <option value="farms">farms</option>
+                <option value="castles">castel</option>
+                <option value="mountaincities">Mountain City</option>
+                <option value="domes">Dome</option>
+                <option value="arctic">Artic</option>
+                <option value="OMG">OMG</option>
+                <option value="boats">Boat</option>
+                <option value="rooms">Room</option>
+              </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="file" class="form-label">Upload Image</label>
+            <input type="file" name="file" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">description should be valid</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" placeholder="Price of your listing" name="price" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">price should be valid</div>
+        </div>      
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" placeholder="location of your listing" name="location" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">location should be valid</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" placeholder="country of your listing" name="country" class="form-control" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">country should be valid</div>
+        </div>
+        
+        <button class="btn mb-3 button">Add</button>
+    </form>
+</body>
