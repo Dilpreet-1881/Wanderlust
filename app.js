@@ -21,13 +21,13 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/users.js");
 const userRoute = require("./routes/userRoute.js");
 const { config } = require("dotenv");
-const store = MongoStore.create({
-    mongoUrl:MongoDbUrl,
-    crypto:{
-        secret:process.env.SECRET,
-    },
-    touchAfter:24*3600,
-});
+// const store = MongoStore.create({
+//     mongoUrl:MongoDbUrl,
+//     crypto:{
+//         secret:process.env.SECRET,
+//     },
+//     touchAfter:24*3600,
+// });
 
 const sessionOptions = {
     store,
@@ -41,7 +41,7 @@ const sessionOptions = {
     }
 }
 
-let MongoDbUrl = process.env.ATLASDB_URL;
+// let MongoDbUrl = process.env.ATLASDB_URL;
 async function main(){
     await mongoose.connect("mongodb://127.0.0.1:27017/wanderlust");
 }
